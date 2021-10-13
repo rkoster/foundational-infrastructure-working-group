@@ -3,6 +3,10 @@ variable "projects" {
   default = {
     "vm-deployment-lifecycle" : {
       inbox_column_id = 16321587
+      ignored_pr_authors = [
+        "dependabot[bot]",
+        "snyk-bot",
+      ]
       repositories = {
         "bosh-io/releases-index" : {},
         "bosh-io/releases" : {},

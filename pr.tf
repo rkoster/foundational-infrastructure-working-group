@@ -12,17 +12,19 @@ locals {
     for project in var.projects : [
       for repo, config in project.repositories : [
         for pr in data.github_repository_pull_requests.repos[repo].results :
-        {
+        contains(project.ignored_pr_authors, pr.opened_by) || pr.draft ? {} : {
           "${repo}/${pr.number}" : {
             column_id = project.inbox_column_id
             number    = pr.number,
             link      = "https://github.com/${repo}/pull/${pr.number}"
+            author    = pr.opened_by
           }
         }
       ]
     ]
   ])...)
 }
+
 resource "github_project_card" "card" {
   lifecycle {
     ignore_changes = [column_id]
@@ -35,7 +37,3 @@ resource "github_project_card" "card" {
 output "pr_data" {
   value = local.pr_data
 }
-
-# output "repositories" {
-#   value = local.repositories
-# }
