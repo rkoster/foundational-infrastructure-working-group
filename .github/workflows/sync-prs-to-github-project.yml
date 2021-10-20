@@ -16,11 +16,10 @@ jobs:
     - uses: hashicorp/setup-terraform@v1
       with:
         terraform_version: 1.0.7
-    - name: Update repository list
+    - name: Sync PR's with GitHub project boards
       shell: bash
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
+        export GITHUB_TOKEN=${{ secrets.GH_TOKEN }}
         terraform init
         terraform apply -auto-approve -no-color
         if [[ -n $(git status -s) ]]; then
