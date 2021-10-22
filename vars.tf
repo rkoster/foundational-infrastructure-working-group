@@ -93,6 +93,11 @@ variable "projects" {
     },
     "identity-and-auth" : {
       inbox_column_id = 16537823
+      ignored_pr_authors = [
+        "Cryogenics-CI",
+        "dependabot[bot]",
+        "snyk-bot",
+      ]
       repositories = {
         "cloudfoundry/cf-uaa-lib" : {},
         "cloudfoundry/cf-uaac" : {},
@@ -105,6 +110,11 @@ variable "projects" {
     },
     "credential-management" : {
       inbox_column_id = 16537845
+      ignored_pr_authors = [
+        "Cryogenics-CI",
+        "dependabot[bot]",
+        "snyk-bot",
+      ]
       repositories = {
         "cloudfoundry-incubator/credhub-acceptance-tests" : {},
         "cloudfoundry-incubator/credhub-api-site" : {},
@@ -118,6 +128,11 @@ variable "projects" {
     },
     "integrated-databases" : {
       inbox_column_id = 16537875
+      ignored_pr_authors = [
+        "Cryogenics-CI",
+        "dependabot[bot]",
+        "snyk-bot",
+      ]
       repositories = {
         "cloudfoundry-incubator/cf-mysql-ci" : {},
         "cloudfoundry-incubator/mysql-backup-release" : {},
@@ -131,6 +146,11 @@ variable "projects" {
     },
     "system-logging-and-metrics" : {
       inbox_column_id = 16537886
+      ignored_pr_authors = [
+        "Cryogenics-CI",
+        "dependabot[bot]",
+        "snyk-bot",
+      ]
       repositories = {
         "cloudfoundry-incubator/event-log-release" : {},
         "cloudfoundry/syslog-release" : {},
