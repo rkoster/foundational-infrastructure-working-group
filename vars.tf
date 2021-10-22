@@ -91,54 +91,52 @@ variable "projects" {
         "cloudfoundry/windows-tools-release" : {},
       }
     },
-    # "identity-and-auth" : {
-    #   inbox_column_id = 16321587
-    #   repositories = {
-    #     "cloudfoundry/cf-uaa-lib" : {},
-    #     "cloudfoundry/cf-uaac" : {},
-    #     "cloudfoundry/omniauth-uaa-oauth2" : {},
-    #     "cloudfoundry/uaa-key-rotator" : {},
-    #     "cloudfoundry/uaa-release" : {},
-    #     "cloudfoundry/uaa-singular" : {},
-    #     "cloudfoundry/uaa" : {},
-    #   }
-    # },
-    # "credential-management" : {
-    #   inbox_column_id = 16321587
-    #   repositories = {
-    #     "cloudfoundry-incubator/credhub-acceptance-tests" : {},
-    #     "cloudfoundry-incubator/credhub-api-site" : {},
-    #     "cloudfoundry-incubator/credhub-ci-locks" : {},
-    #     "cloudfoundry-incubator/credhub-cli" : {},
-    #     "cloudfoundry-incubator/credhub-perf-release" : {},
-    #     "cloudfoundry-incubator/credhub" : {},
-    #     "cloudfoundry/docs-credhub" : {},
-    #     "cloudfoundry/secure-credentials-broker" : {}
-    #   }
-    # },
-    # "integrated-databases" : {
-    #   inbox_column_id = 16321587
-    #   repositories = {
-
-    #     "cloudfoundry-incubator/cf-mysql-ci" : {},
-    #     "cloudfoundry-incubator/mysql-backup-release" : {},
-    #     "cloudfoundry-incubator/mysql-monitoring-release" : {},
-    #     "cloudfoundry-incubator/pxc-release" : {},
-    #     "cloudfoundry/cf-mysql-deployment" : {},
-    #     "cloudfoundry/cf-mysql-release" : {},
-    #     "cloudfoundry/galera-init" : {},
-    #     "cloudfoundry/postgres-release" : {},
-    #   }
-    # },
-    # "system-logging-and-metrics" : {
-    #   inbox_column_id = 16321587
-    #   repositories = {
-
-    #     "cloudfoundry-incubator/event-log-release" : {},
-    #     "cloudfoundry/syslog-release" : {},
-    #     "cloudfoundry/windows-syslog-release" : {}
-    #   }
-    # }
+    "identity-and-auth" : {
+      inbox_column_id = 16537823
+      repositories = {
+        "cloudfoundry/cf-uaa-lib" : {},
+        "cloudfoundry/cf-uaac" : {},
+        "cloudfoundry/omniauth-uaa-oauth2" : {},
+        "cloudfoundry/uaa-key-rotator" : {},
+        "cloudfoundry/uaa-release" : {},
+        "cloudfoundry/uaa-singular" : {},
+        "cloudfoundry/uaa" : {},
+      }
+    },
+    "credential-management" : {
+      inbox_column_id = 16537845
+      repositories = {
+        "cloudfoundry-incubator/credhub-acceptance-tests" : {},
+        "cloudfoundry-incubator/credhub-api-site" : {},
+        "cloudfoundry-incubator/credhub-ci-locks" : {},
+        "cloudfoundry-incubator/credhub-cli" : {},
+        "cloudfoundry-incubator/credhub-perf-release" : {},
+        "cloudfoundry-incubator/credhub" : {},
+        "cloudfoundry/docs-credhub" : {},
+        "cloudfoundry/secure-credentials-broker" : {}
+      }
+    },
+    "integrated-databases" : {
+      inbox_column_id = 16537875
+      repositories = {
+        "cloudfoundry-incubator/cf-mysql-ci" : {},
+        "cloudfoundry-incubator/mysql-backup-release" : {},
+        "cloudfoundry-incubator/mysql-monitoring-release" : {},
+        "cloudfoundry-incubator/pxc-release" : {},
+        "cloudfoundry/cf-mysql-deployment" : {},
+        "cloudfoundry/cf-mysql-release" : {},
+        "cloudfoundry/galera-init" : {},
+        "cloudfoundry/postgres-release" : {},
+      }
+    },
+    "system-logging-and-metrics" : {
+      inbox_column_id = 16537886
+      repositories = {
+        "cloudfoundry-incubator/event-log-release" : {},
+        "cloudfoundry/syslog-release" : {},
+        "cloudfoundry/windows-syslog-release" : {}
+      }
+    }
   }
 }
 variable "project_data" {
