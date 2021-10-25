@@ -5,6 +5,7 @@ on:
       - '*.tf'
       - '*.tfstate'
       - '*.tfvars'
+      - 'working_groups.yml'
       - '.github/workflows/sync-prs-to-github-project.yml'
   schedule:
     - cron: '0/5 * * * *'

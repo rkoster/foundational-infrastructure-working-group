@@ -1,0 +1,171 @@
+working_groups:
+- name: Foundational Infrastructure
+  areas:
+  - name: VM Deployment lifecycle (BOSH)
+    stale_bot:
+      enabled: true
+      days_before_issue_stale: 21
+      days_before_pr_stale: 21
+      days_before_issue_close: 7
+      days_before_pr_close: 7
+    github_project_inbox_column_id: 16321587
+    ignored_pr_authors:
+    - Cryogenics-CI
+    - dependabot[bot]
+    - snyk-bot
+    repositories:
+    - name: bosh-io/releases-index
+    - name: bosh-io/releases
+    - name: bosh-io/stemcells-core-index
+    - name: bosh-io/stemcells-cpi-index
+    - name: bosh-io/stemcells-legacy-index
+    - name: bosh-io/stemcells-softlayer-index
+    - name: bosh-io/stemcells-windows-index
+    - name: bosh-io/web
+    - name: bosh-io/worker
+    - name: bosh-packages/cf-cli-release
+    - name: bosh-packages/golang-release
+    - name: bosh-packages/java-release
+    - name: bosh-packages/nginx-release
+    - name: bosh-packages/python-release
+    - name: bosh-packages/ruby-release
+    - name: cloudfoundry-incubator/backup-and-restore-sdk-release
+    - name: cloudfoundry-incubator/bosh-alicloud-light-stemcell-builder
+    - name: cloudfoundry-incubator/bosh-backup-and-restore-test-releases
+    - name: cloudfoundry-incubator/bosh-cpi-certification
+    - name: cloudfoundry-incubator/bosh-disaster-recovery-acceptance-tests
+    - name: cloudfoundry-incubator/bosh-windows-acceptance-tests
+    - name: cloudfoundry-incubator/bosh-windows-stemcell-builder
+    - name: cloudfoundry-incubator/disaster-recovery-acceptance-tests
+    - name: cloudfoundry-incubator/exemplar-backup-and-restore-release
+    - name: cloudfoundry-incubator/resolvconf-manager-index
+    - name: cloudfoundry-incubator/resolvconf-manager
+    - name: cloudfoundry-incubator/sample-windows-bosh-release
+    - name: cloudfoundry-incubator/stembuild
+    - name: cloudfoundry-incubator/stemcells-alicloud-index
+    - name: cloudfoundry-incubator/windows-utilities-release
+    - name: cloudfoundry-incubator/windows-utilities-tests
+    - name: cloudfoundry/bosh-acceptance-tests
+    - name: cloudfoundry/bosh-agent-index
+    - name: cloudfoundry/bosh-agent
+    - name: cloudfoundry/bosh-aws-cpi-release
+    - name: cloudfoundry/bosh-aws-light-stemcell-builder
+    - name: cloudfoundry/bosh-azure-cpi-release
+    - name: cloudfoundry/bosh-bbl-ci-envs
+    - name: cloudfoundry/bosh-cli
+    - name: cloudfoundry/bosh-community-stemcell-ci-infra
+    - name: cloudfoundry/bosh-compiled-releases-index
+    - name: cloudfoundry/bosh-cpi-environments
+    - name: cloudfoundry/bosh-cpi-go
+    - name: cloudfoundry/bosh-cpi-kb
+    - name: cloudfoundry/bosh-cpi-ruby
+    - name: cloudfoundry/bosh-davcli
+    - name: cloudfoundry/bosh-deployment-resource
+    - name: cloudfoundry/bosh-deployment
+    - name: cloudfoundry/bosh-dns-aliases-release
+    - name: cloudfoundry/bosh-dns-release
+    - name: cloudfoundry/bosh-docker-cpi-release
+    - name: cloudfoundry/bosh-gcscli
+    - name: cloudfoundry/bosh-google-cpi-release
+    - name: cloudfoundry/bosh-google-light-stemcell-builder
+    - name: cloudfoundry/bosh-linux-stemcell-builder
+    - name: cloudfoundry/bosh-openstack-cpi-release
+    - name: cloudfoundry/bosh-s3cli
+    - name: cloudfoundry/bosh-softlayer-cpi-release
+    - name: cloudfoundry/bosh-stemcell-ci-infra
+    - name: cloudfoundry/bosh-stemcells-ci
+    - name: cloudfoundry/bosh-utils
+    - name: cloudfoundry/bosh-virtualbox-cpi-release
+    - name: cloudfoundry/bosh-vsphere-cpi-release
+    - name: cloudfoundry/bosh-warden-cpi-release
+    - name: cloudfoundry/bosh-workstation
+    - name: cloudfoundry/bosh
+    - name: cloudfoundry/bpm-release
+    - name: cloudfoundry/bsdtar
+    - name: cloudfoundry/config-server-release
+    - name: cloudfoundry/config-server
+    - name: cloudfoundry/docs-bosh
+    - name: cloudfoundry/docs-bbr
+    - name: cloudfoundry/gofileutils
+    - name: cloudfoundry/gosigar
+    - name: cloudfoundry/os-conf-release
+    - name: cloudfoundry/socks5-proxy
+    - name: cloudfoundry/tlsconfig
+    - name: cloudfoundry/usn-resource
+    - name: cloudfoundry/yagnats
+    - name: cloudfoundry/windows-tools-release
+  - name: Identity and Auth (UAA)
+    stale_bot:
+      enabled: false
+      days_before_issue_stale: 21
+      days_before_pr_stale: 21
+      days_before_issue_close: 7
+      days_before_pr_close: 7
+    github_project_inbox_column_id: 16537823
+    ignored_pr_authors:
+    - dependabot[bot]
+    - snyk-bot
+    repositories:
+    - name: cloudfoundry/cf-uaa-lib
+    - name: cloudfoundry/cf-uaac
+    - name: cloudfoundry/omniauth-uaa-oauth2
+    - name: cloudfoundry/uaa-key-rotator
+    - name: cloudfoundry/uaa-release
+    - name: cloudfoundry/uaa-singular
+    - name: cloudfoundry/uaa
+  - name: Credential Management (Credhub)
+    stale_bot:
+      enabled: false
+      days_before_issue_stale: 21
+      days_before_pr_stale: 21
+      days_before_issue_close: 7
+      days_before_pr_close: 7
+    github_project_inbox_column_id: 16537845
+    ignored_pr_authors:
+    - dependabot-preview[bot]
+    - dependabot[bot]
+    - snyk-bot
+    repositories:
+    - name: cloudfoundry-incubator/credhub-acceptance-tests
+    - name: cloudfoundry-incubator/credhub-api-site
+    - name: cloudfoundry-incubator/credhub-ci-locks
+    - name: cloudfoundry-incubator/credhub-cli
+    - name: cloudfoundry-incubator/credhub-perf-release
+    - name: cloudfoundry-incubator/credhub
+    - name: cloudfoundry/docs-credhub
+    - name: cloudfoundry/secure-credentials-broker
+  - name: Integrated Databases (Mysql / Postgres)
+    stale_bot:
+      enabled: false
+      days_before_issue_stale: 21
+      days_before_pr_stale: 21
+      days_before_issue_close: 7
+      days_before_pr_close: 7
+    github_project_inbox_column_id: 16537875
+    ignored_pr_authors:
+    - dependabot[bot]
+    - snyk-bot
+    repositories:
+    - name: cloudfoundry-incubator/cf-mysql-ci
+    - name: cloudfoundry-incubator/mysql-backup-release
+    - name: cloudfoundry-incubator/mysql-monitoring-release
+    - name: cloudfoundry-incubator/pxc-release
+    - name: cloudfoundry/cf-mysql-deployment
+    - name: cloudfoundry/cf-mysql-release
+    - name: cloudfoundry/galera-init
+    - name: cloudfoundry/postgres-release
+  - name: System Logging and Metrics (rsyslog / event-log)
+    stale_bot:
+      enabled: false
+      days_before_issue_stale: 21
+      days_before_pr_stale: 21
+      days_before_issue_close: 7
+      days_before_pr_close: 7
+    github_project_inbox_column_id: 16537886
+    ignored_pr_authors:
+    - dependabot[bot]
+    - snyk-bot
+    repositories:
+    - name: cloudfoundry-incubator/event-log-release
+    - name: cloudfoundry/syslog-release
+    - name: cloudfoundry/windows-syslog-release
