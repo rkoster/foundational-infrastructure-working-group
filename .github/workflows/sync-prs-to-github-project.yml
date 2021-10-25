@@ -23,11 +23,13 @@ jobs:
       run: |
         export GITHUB_TOKEN=${{ secrets.GH_TOKEN }}
         terraform init
+        set -e
         terraform plan -input=false -no-color -out=plan.tfplan -detailed-exitcode
         if [ $? -eq 0 ]; then
           echo "No changes, skipping apply"
           exit 0
         fi
+        set +e
         terraform apply -auto-approve -no-color
         if [[ -n $(git status -s) ]]; then
           git config user.name bosh-admin-bot
