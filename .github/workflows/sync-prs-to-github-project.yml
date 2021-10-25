@@ -25,12 +25,12 @@ jobs:
       run: |
         export GITHUB_TOKEN=${{ secrets.GH_TOKEN }}
         terraform init
+        echo "::set-output name=terraform_changes::true"
         terraform plan -input=false -no-color -out=plan.tfplan -detailed-exitcode
         if [ $? -eq 0 ]; then
           echo "::set-output name=terraform_changes::false"
           exit 0
         fi
-        echo "::set-output name=terraform_changes::true"
     - name: Terraform apply
       if: steps.plan.outputs.terraform_changes == 'true'
       shell: bash
