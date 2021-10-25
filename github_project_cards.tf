@@ -33,7 +33,7 @@ locals {
 
 resource "github_project_card" "card" {
   lifecycle {
-    ignore_changes = [column_id]
+    ignore_changes = [column_id, note]
   }
   for_each  = local.pr_data
   column_id = each.value.column_id
