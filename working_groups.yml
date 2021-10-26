@@ -169,3 +169,50 @@ working_groups:
     - name: cloudfoundry-incubator/event-log-release
     - name: cloudfoundry/syslog-release
     - name: cloudfoundry/windows-syslog-release
+- name: App Runtime Platform
+  areas:
+  - name: Diego
+    stale_bot:
+      enabled: false
+      days_before_issue_stale: 21
+      days_before_pr_stale: 21
+      days_before_issue_close: 7
+      days_before_pr_close: 7
+    github_project_inbox_column_id: 16593105
+    ignored_pr_authors: []
+    repositories:
+    - name: cloudfoundry/diego-release
+    - name: cloudfoundry/archiver
+    - name: cloudfoundry/auction
+    - name: cloudfoundry/auctioneer
+    - name: cloudfoundry/bbs
+    - name: cloudfoundry/benchmarkbbs
+    - name: cloudfoundry/bytefmt
+    - name: cloudfoundry/cacheddownloader
+    - name: cloudfoundry/certsplitter
+    - name: cloudfoundry/cfdot
+    - name: cloudfoundry/clock
+    - name: cloudfoundry/consuladapter
+    - name: cloudfoundry/debugserver
+    - name: cloudfoundry/diego-dockerfiles
+    - name: cloudfoundry/diego-logging-client
+    - name: cloudfoundry/diego-upgrade-stability-tests
+    - name: cloudfoundry/dockerdriver
+    - name: cloudfoundry/durationjson
+    - name: cloudfoundry/ecrhelper
+    - name: cloudfoundry/eventhub
+    - name: cloudfoundry/executor
+    - name: cloudfoundry/fileserver
+    - name: cloudfoundry/healthcheck
+    - name: cloudfoundry/inigo
+    - name: cloudfoundry/localdriver
+    - name: cloudfoundry/localip
+    - name: cloudfoundry/locket
+    - name: cloudfoundry/operationq
+    - name: cloudfoundry/rep
+    - name: cloudfoundry/route-emitter
+    - name: cloudfoundry/systemcerts
+    - name: cloudfoundry/tlsconfig
+    - name: cloudfoundry/vizzini
+    - name: cloudfoundry/volman
+    - name: cloudfoundry/workpool
