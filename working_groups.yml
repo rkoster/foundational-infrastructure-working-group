@@ -178,7 +178,7 @@ working_groups:
       days_before_pr_stale: 21
       days_before_issue_close: 7
       days_before_pr_close: 7
-    github_project_inbox_column_id: 16593105
+    github_project_inbox_column_id: 16593114
     ignored_pr_authors: []
     repositories:
     - name: cloudfoundry/diego-release
