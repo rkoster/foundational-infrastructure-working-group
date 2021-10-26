@@ -216,3 +216,70 @@ working_groups:
     - name: cloudfoundry/vizzini
     - name: cloudfoundry/volman
     - name: cloudfoundry/workpool
+  - name: Garden Containers
+    stale_bot:
+      enabled: false
+      days_before_issue_stale: 21
+      days_before_pr_stale: 21
+      days_before_issue_close: 7
+      days_before_pr_close: 7
+    github_project_inbox_column_id: 16593114
+    ignored_pr_authors: []
+    repositories:
+    - name: cloudfoundry/garden-runc-release
+    - name: cloudfoundry/dontpanic
+    - name: cloudfoundry/garden
+    - name: cloudfoundry/garden-integration-tests
+    - name: cloudfoundry/grootfs
+    - name: cloudfoundry/guardian
+    - name: cloudfoundry/idmapper
+    - name: cloudfoundry/netplugin-shim
+    - name: cloudfoundry/winc-release
+    - name: cloudfoundry/winc
+    - name: cloudfoundry/groot-windows
+    - name: cloudfoundry-incubator/diff-exporter
+    - name: cloudfoundry/cert-injector
+  - name: Networking
+    stale_bot:
+      enabled: false
+      days_before_issue_stale: 21
+      days_before_pr_stale: 21
+      days_before_issue_close: 7
+      days_before_pr_close: 7
+    github_project_inbox_column_id: 16593114
+    ignored_pr_authors: []
+    repositories:
+    - name: cloudfoundry/routing-release
+    - name: cloudfoundry/routing-acceptance-tests
+    - name: cloudfoundry/routing-api
+    - name: cloudfoundry/routing-api-cli
+    - name: cloudfoundry/routing-perf-release
+    - name: cloudfoundry/cf-tcp-router
+    - name: cloudfoundry/routing-info
+    - name: cloudfoundry/gorouter
+    - name: cloudfoundry/route-registrar
+    - name: cloudfoundry-incubator/haproxy-boshrelease
+    - name: cloudfoundry/cf-networking-release
+    - name: cloudfoundry/networking-oss-deployments
+    - name: cloudfoundry/cf-networking-helpers
+    - name: cloudfoundry/silk-release
+    - name: cloudfoundry/silk
+    - name: cloudfoundry/nats-release
+  - name: Logging and Metrics
+    stale_bot:
+      enabled: false
+      days_before_issue_stale: 21
+      days_before_pr_stale: 21
+      days_before_issue_close: 7
+      days_before_pr_close: 7
+    github_project_inbox_column_id: 16593105
+    ignored_pr_authors: []
+    repositories:
+    - name: cloudfoundry/bosh-system-metrics-forwarder-release
+    - name: cloudfoundry/log-cache-release
+    - name: cloudfoundry/loggregator-release
+    - name: cloudfoundry/loggregator-agent-release
+    - name: cloudfoundry/metrics-discovery-release
+    - name: cloudfoundry/statsd-injector-release
+    - name: cloudfoundry/syslog-release
+    - name: cloudfoundry/system-metrics-scraper-release
