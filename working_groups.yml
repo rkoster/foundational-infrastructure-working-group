@@ -72,7 +72,6 @@ working_groups:
     - name: cloudfoundry/bosh-openstack-cpi-release
     - name: cloudfoundry/bosh-s3cli
     - name: cloudfoundry/bosh-softlayer-cpi-release
-    - name: cloudfoundry/bosh-stemcell-ci-infra
     - name: cloudfoundry/bosh-stemcells-ci
     - name: cloudfoundry/bosh-utils
     - name: cloudfoundry/bosh-virtualbox-cpi-release
